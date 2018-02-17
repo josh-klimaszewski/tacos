@@ -6,8 +6,14 @@
             getOrder: getOrder
         }
 
-        function addOrder(orderObj) {
+        function addOrder(name, taco) {
+            var orderObj = {};
+            orderObj.name = name;
+            orderObj.taco = taco;
             orders.push(orderObj);
+            document.getElementById('nameInput').value = "";
+            document.getElementById('tacoInput').selectedIndex = 0;
+            orderObj = {};
             
             
             console.log(orders);
