@@ -4,11 +4,13 @@
             <div class="table">
                 <table>
                     <tr>
-                        <th>Name</th>
-                        <th>Taco</th>
+                        <th id="thLeft">Name</th>
+                        <th>Drink</th>
+                        <th id="thRight">Taco</th>
                     </tr>
                     <tr ng-repeat="x in $ctrl.orderList track by $index" >
                         <td>{{ x.name }}</td>
+                        <td class="pillar">{{ x.drink }}</td>
                         <td>{{ x.taco }}</td>
                     </tr>
                 </table>
