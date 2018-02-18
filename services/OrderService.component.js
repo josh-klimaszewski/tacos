@@ -3,7 +3,8 @@
         var orders = [];
         return {
             addOrder: addOrder,
-            getOrder: getOrder
+            getOrder: getOrder,
+            removeOrder: removeOrder
         }
 
         function addOrder(name, drink, taco) {
@@ -24,6 +25,11 @@
         function getOrder() {
             return orders;
             orders = [];
+        }
+        function removeOrder(order) {
+            var array = orders;
+            var index = array.indexOf(order);
+            array.splice(index, 1);
         }
     }
     angular

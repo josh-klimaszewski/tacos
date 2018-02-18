@@ -1,16 +1,15 @@
 * {
     box-sizing: border-box;
 }
+
 main {
-    background:linear-gradient(to right, #0cad54, #ddff8f);
+    background: linear-gradient(to right, #0cad54, #ddff8f);
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10%;
-    
-    
-    
 }
+
 .container {
     text-align: center;
     background-color: #eee;
@@ -21,12 +20,28 @@ main {
     border: 1px solid black;
     width: 100%;
 }
+
 .formTask {
     display: flex;
-    
-    align-items: center; 
-    
+    align-items: center;
+    justify-content: space-between;
+    ;
 }
+
+#nameInput {
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#drinkInput {
+    display: flex;
+}
+
+#tacoInput {
+    height: 20px;
+}
+
 button {
     width: 25%;
     height: 50px;
@@ -34,21 +49,8 @@ button {
     align-self: flex-end;
     border-radius: 25px;
 }
-#nameInput {
-    width: 25%;
-    height: 20px;
-    margin-left: 65%;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-#tacoInput {
-    width: 25%;
-    height: 20px;
-    margin-left: 68%;
-}
+
 .table {
-    
-    
     border: 1px solid black;
     width: 100%;
     margin-top: 5%;
@@ -56,31 +58,32 @@ button {
     padding: 2%;
     border-radius: 25px;
 }
+
 table {
     display: flex;
     justify-content: space-around;
     border-collapse: collapse;
 }
+
 th {
     border-bottom: 1px solid black;
 }
+
 td {
     border-top: 1px solid black;
     padding: 5px;
 }
+
 .pillar {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
 
-#thRight {
-    border-left: 1px solid black;
-}
-#thLeft {
+.thRight {
     border-right: 1px solid black;
 }
-    
-    
 
-
-
+.xout {
+    width: 20px;
+    height: 20px;
+}

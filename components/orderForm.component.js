@@ -9,9 +9,11 @@
                     <input id="nameInput" type="text" ng-model="name" placeholder=" Enter your name.">
                 </div>
                 <div class="formTask">
-                    <p>Drink:</p>
-                    <input name="drinkInput" type="radio" ng-model="drink" value="soda">Soda
-                    <input name="drinkInput" type="radio" ng-model="drink" value="horcatia">Horcatia
+                    <p id=>Drink:</p>
+                    <div id="drinkInput">
+                        <input name="drinkInput" type="radio" ng-model="drink" value="soda">Soda
+                        <input name="drinkInput" type="radio" ng-model="drink" value="horcatia">Horcatia
+                    </div>
                 </div>
                 <div class="formTask">
                     <p>Taco: </p>
